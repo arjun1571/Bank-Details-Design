@@ -13,7 +13,7 @@ const LeftSide = () => {
         <button className="btn btn-primary">Pay amount: $200</button>
       </div>
       <div className="mt-7 flex items-center">
-        <button className="btn btn-primary md:mr-7 mr-3">
+        <button className="btn btn-primary btn-sm md:mr-7 mr-3">
           Select Payment Method
         </button>
         <div className="flex flex-col-reverse">
@@ -50,7 +50,7 @@ const LeftSide = () => {
         </button>
       </div>
       <div className="mt-8">
-        <button className="btn btn-primary btn-md   md:mr-7 mr-3">
+        <button className="btn btn-primary btn-sm   md:mr-7 mr-3">
           Bank Details
         </button>
         <div className="mx-5 mt-5">
