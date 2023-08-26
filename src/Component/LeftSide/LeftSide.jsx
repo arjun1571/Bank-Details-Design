@@ -72,12 +72,17 @@ const LeftSide = () => {
         </div>
       </div>
       <div className="mt-5">
-        <div className="flex items-center">
+        <div className="flex items-center md:mx-20 mx-10">
           <button className="btn btn-primary btn-sm   md:mr-7 mr-3">
             Payment Recept document
           </button>
           <img className="w-14" src={up} alt="" />
         </div>
+      </div>
+      <div className="mt-5 text-center">
+      <button className="btn btn-primary w-60  btn-sm md:mr-7 mr-3">
+            submit 
+          </button>
       </div>
     </div>
   );
