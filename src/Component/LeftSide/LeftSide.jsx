@@ -1,6 +1,7 @@
 import logo from "../../assets/cimb-bank.png";
 import logo1 from "../../assets/bank-one.png";
 import bank from "../../assets/bank.png";
+import up from "../../assets/up.svg";
 
 const LeftSide = () => {
   return (
@@ -53,12 +54,29 @@ const LeftSide = () => {
           Bank Details
         </button>
         <div className="mx-5 mt-5">
-        <h1><span className="font-bold">Owner Name </span>: Eva</h1>
-        <h1><span className="font-bold">Bank Name </span>: Sonali Bank</h1>
-        <h1><span className="font-bold">Account  </span>: Eva</h1>
-        <h1><span className="font-bold">Owner Name </span>: Eva</h1>
-        <h1><span className="font-bold">Owner Name </span>: Eva</h1>
-
+          <h1>
+            <span className="font-bold">Owner Name </span>: Eva
+          </h1>
+          <h1>
+            <span className="font-bold">Bank Name </span>: Sonali Bank
+          </h1>
+          <h1>
+            <span className="font-bold">Account Num </span>: 4568785445525
+          </h1>
+          <h1>
+            <span className="font-bold">Brance Name </span>: Dhaka
+          </h1>
+          <h1>
+            <span className="font-bold">Routing Number </span>: 574548754654
+          </h1>
+        </div>
+      </div>
+      <div className="mt-5">
+        <div className="flex items-center">
+          <button className="btn btn-primary btn-sm   md:mr-7 mr-3">
+            Payment Recept document
+          </button>
+          <img className="w-14" src={up} alt="" />
         </div>
       </div>
     </div>
