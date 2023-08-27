@@ -1,16 +1,22 @@
-import flag from "../../../assets/flag.svg";
+
 import up from "../../../assets/up.svg";
-import nogod from "../../../assets/nogod.png";
-import bkash from "../../../assets/bkash.png";
+
 
 const Right = () => {
   return (
     <div className="md:p-5">
-      <div className="flex">
-        <button className="btn btn-primary md:mr-7 mr-3">
-          Total amount: $5870
+      <div className="grid md:grid-cols-3 grid-cols-1 gap-3">
+        <button className="btn btn-primary ">
+          Total amount:$5870
         </button>
-        <button className="btn btn-primary">Pay amount: $200</button>
+        <button className="btn btn-primary">Pay amount</button>
+        <div className="form-control ">
+          <input
+            type="text"
+            placeholder="Pay amount"
+            className="input input-bordered w-full max-w-xs input-primary"
+          />
+        </div>
       </div>
       <div className="divider"></div>
       <div className="mt-7 flex items-center">
@@ -18,29 +24,37 @@ const Right = () => {
           Select Payment Method
         </button>
         <div className="flex flex-col-reverse">
-          <button className="btn btn-primary md:mr-7 mr-3  btn-sm">Bank</button>
-          <button className="btn btn-primary md:mr-7 mr-3  btn-sm mb-3">
-            Mobile E-Wallet
-          </button>
+        <select className="select select-primary w-full max-w-xs">
+        <option disabled selected>Select One</option>
+        <option>Bank</option>
+        <option>Mobile E-Wallet</option>
+        <option>Card</option>
+      </select>
         </div>
       </div>
       <div className="mt-8 md:flex items-center ">
         <button className="btn btn-primary md:mr-7 mr-3  btn-sm mb-3">
           Country
         </button>
-        <div className="flex items-center ">
-          <img className="w-20 mt-2" src={flag} alt="" />
-          <img className="w-20 mt-2 mx-2" src={flag} alt="" />
-          <img className="w-20 mt-2" src={flag} alt="" />
+        <div className="flex flex-col-reverse">
+        <select className="select select-primary w-full max-w-xs">
+        <option disabled selected>Select One</option>
+        <option>Bangladesh</option>
+        <option>India</option>
+        <option>Nepal</option>
+      </select>
         </div>
       </div>
-      <div className="mt-8 md:flex items-center ">
+      <div className="mt-8 md:flex  ">
         <button className="btn btn-primary md:mr-7 mr-3 btn-sm mb-3">
           Types of mobile banking
         </button>
-        <div className="flex items-center ">
-          <img className="w-20 mt-2" src={nogod} alt="" />
-          <img className="w-20 mt-2 mx-2" src={bkash} alt="" />
+        <div className="flex flex-col-reverse">
+        <select className="select select-primary w-full max-w-xs">
+        <option disabled selected>Select One</option>
+        <option>Bkash</option>
+        <option>Nogod</option>
+      </select>
         </div>
       </div>
       <div className="mt-10 ">

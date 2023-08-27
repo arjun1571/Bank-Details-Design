@@ -1,26 +1,35 @@
-import logo from "../../assets/cimb-bank.png";
-import logo1 from "../../assets/bank-one.png";
+
 import bank from "../../assets/bank.png";
 import up from "../../assets/up.svg";
 
 const LeftSide = () => {
   return (
-    <div>
-      <div className="flex">
-        <button className="btn btn-primary md:mr-7 mr-3">
+    <div className="">
+      <div className="grid md:grid-cols-3 grid-cols-1 gap-3">
+        <button className="btn btn-primary ">
           Total amount: $5870
         </button>
-        <button className="btn btn-primary">Pay amount: $200</button>
+        <button className="btn btn-primary">Pay amount</button>
+
+        <div className="form-control ">
+          <input
+            type="text"
+            placeholder="Pay amount"
+            className="input input-bordered w-full max-w-xs input-primary"
+          />
+        </div>
       </div>
       <div className="mt-7 flex items-center">
         <button className="btn btn-primary btn-sm md:mr-7 mr-3">
           Select Payment Method
         </button>
         <div className="flex flex-col-reverse">
-          <button className="btn btn-primary md:mr-7 mr-3  btn-sm">Bank</button>
-          <button className="btn btn-primary md:mr-7 mr-3  btn-sm mb-3">
-            Mobile E-Wallet
-          </button>
+        <select className="select select-primary w-full max-w-xs">
+        <option disabled selected>Select One</option>
+        <option>Bank</option>
+        <option>Mobile E-Wallet</option>
+        <option>Card</option>
+      </select>
         </div>
       </div>
       <div className="mt-8 flex items-center ">
@@ -28,21 +37,26 @@ const LeftSide = () => {
           Bank Name
         </button>
         <div className="flex flex-col-reverse ">
-          <img className="w-20 mt-2" src={logo} alt="" />
-          <img className="w-20" src={logo1} alt="" />
+
+        <select className="select select-primary w-full max-w-xs">
+        <option disabled selected>Select One</option>
+        <option>Cimg Bank</option>
+        <option>Sonali Bank</option>
+        <option>Eastern Bank</option>
+      </select>
         </div>
       </div>
       <div className="mt-10 lg:flex items-center">
         <div>
           <img className="w-40 mx-auto" src={bank} alt="" />
         </div>
-        <div className="md:mx-8 mt-5">
-          <h1 className="text-center">Virtual A/C Now : 20200002020</h1>
-          <h1 className="text-center">Virtual A/C Now : 20200002020</h1>
-          <h1 className="text-center">Virtual A/C Now : 20200002020</h1>
-          <h1 className="text-center">Virtual A/C Now : 20200002020</h1>
-          <h1 className="text-center">Virtual A/C Now : 20200002020</h1>
+        <div className="md:mx-8 mt-5 items-start">
+          <h1 className="text-center">A/C No : 20200002020</h1>
+          <h1 className="text-center">A/C Name : Arju chandra Das</h1>
+          <h1 className="text-center">A/C Type : Current</h1>
+          <h1 className="text-center">IFSC : Ratnovaapvs</h1>
         </div>
+
       </div>
       <div className="mt-8 text-center">
         <button className="btn btn-primary btn-sm   md:mr-7 mr-3">
@@ -80,9 +94,9 @@ const LeftSide = () => {
         </div>
       </div>
       <div className="mt-5 text-center">
-      <button className="btn btn-primary w-60  btn-sm md:mr-7 mr-3">
-            submit 
-          </button>
+        <button className="btn btn-primary w-60  btn-sm md:mr-7 mr-3">
+          submit
+        </button>
       </div>
     </div>
   );
