@@ -5,11 +5,20 @@ import up from "../../../assets/up.svg";
 const Right = () => {
   return (
     <div className="md:p-5">
-      <div className="grid md:grid-cols-3 grid-cols-1 gap-3">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-3">
         <button className="btn btn-primary ">
           Total amount:$5870
         </button>
-        <button className="btn btn-primary">Pay amount</button>
+        <div className="flex flex-col-reverse w-28">
+          <select className="select select-primary w-full max-w-xs">
+            <option disabled selected>
+              Select
+            </option>
+            <option>BDT</option>
+            <option>USD</option>
+            <option>INR</option>
+          </select>
+        </div>
         <div className="form-control ">
           <input
             type="text"
@@ -26,7 +35,6 @@ const Right = () => {
         <div className="flex flex-col-reverse">
         <select className="select select-primary w-full max-w-xs">
         <option disabled selected>Select One</option>
-        <option>Bank</option>
         <option>Mobile E-Wallet</option>
         <option>Card</option>
       </select>
@@ -62,7 +70,7 @@ const Right = () => {
         <h1>Account Type : agent</h1>
         <h1>Address : Dhaka</h1>
       </div>
-      <div className="mt-8 text-center">
+      <div className="mt-8">
         <button className="btn btn-primary btn-sm   md:mr-7 mr-3">
           Remittance Mobile E-Wallet
         </button>
@@ -85,7 +93,7 @@ const Right = () => {
           <img className="w-14" src={up} alt="" />
         </div>
       </div>
-      <div className="mt-5 text-center">
+      <div className="mt-5 ">
         <button className="btn btn-primary w-60  btn-sm md:mr-7 mr-3">
           submit
         </button>
